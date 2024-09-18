@@ -2,7 +2,12 @@ name: Release
 on: 
   push: 
     branches: [ master ]
- 
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 # canceling of previous CI run (if such exists)
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
