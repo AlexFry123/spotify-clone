@@ -1,6 +1,8 @@
 import AccountContent from "./components/AccountContent"
 import Header from "@/components/Header"
 
+export const revalidate = 0;
+
 const Account = () => {
     return <div className="bg-neutral-900 rounded-lg h-full w-full overflow-hidden overflow-y-auto">
         <Header className="from-bg-neutral-900">
